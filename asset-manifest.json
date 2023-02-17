@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/concessions-in-shanghai/static/css/main.bdd10bfc.css",
+    "main.js": "/concessions-in-shanghai/static/js/main.d83164ac.js",
+    "index.html": "/concessions-in-shanghai/index.html",
+    "main.bdd10bfc.css.map": "/concessions-in-shanghai/static/css/main.bdd10bfc.css.map",
+    "main.d83164ac.js.map": "/concessions-in-shanghai/static/js/main.d83164ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdd10bfc.css",
+    "static/js/main.d83164ac.js"
+  ]
+}
