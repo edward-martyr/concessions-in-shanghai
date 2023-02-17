@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from 'react';
 import Cite from 'citation-js';
 import bibliography from './index.bib';
 
@@ -14,4 +15,18 @@ export const inlineCite = (entries) => {
   });
 };
 
-export default bibsDiv;
+const Bibliography = () => {
+  const bibRef = useRef(null);
+
+  useEffect(() => {
+    bibRef.current.appendChild(bibsDiv);
+  }, []);
+
+  return (
+    <div id="bibliography" ref={bibRef}>
+      <h2>Bibliography</h2>
+    </div>
+  );
+};
+
+export default Bibliography;

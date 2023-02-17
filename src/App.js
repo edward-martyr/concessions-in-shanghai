@@ -1,15 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import WebFont from 'webfontloader';
-import bibsDiv, { inlineCite } from './bibliography';
 
-import { Header } from './components';
+import { inlineCite } from './components/bibliography';
+import { Bibliography, Header } from './components';
 
 const App = () => {
-  const bibRef = useRef(null);
-
   useEffect(() => {
     WebFont.load({ typekit: { id: 'rpl2zoy' } });
-    bibRef.current.appendChild(bibsDiv);
   }, []);
 
   return (
@@ -17,7 +14,7 @@ const App = () => {
       <Header />
       <div id="content">
         <p>{inlineCite(['wassersteinSecretWarShanghai1999'])}</p>
-        <div ref={bibRef} />
+        <Bibliography />
       </div>
     </div>
   );

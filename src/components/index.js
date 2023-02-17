@@ -1,4 +1,4 @@
 import Header from './header';
+import Bibliography from './bibliography';
 
-// eslint-disable-next-line import/prefer-default-export
-export { Header };
+export { Header, Bibliography };
