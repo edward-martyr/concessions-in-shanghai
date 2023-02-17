@@ -1,6 +1,8 @@
 const path = require('path');
+const CompressionPlugin = require('compression-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   output: {
@@ -42,6 +44,13 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    chunkIds: 'size',
+    minimize: true,
+    minimizer: [
+      new TerserPlugin(),
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
@@ -53,5 +62,6 @@ module.exports = {
         { from: 'src/robots.txt', to: 'robots.txt' },
       ],
     }),
+    new CompressionPlugin(),
   ],
 };
