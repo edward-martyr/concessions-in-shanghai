@@ -1,10 +1,25 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 body {
-  width: 100%;
-  overflow-x: hidden;
+  // background-color: $background-color;
+  max-width: 100%;
+  overflow-x: clip;
+  font-family: 'Minion 3', serif;
+}
+
+#content {
+  $content-margin: calc(max(20px, 13%));
+  margin-left: $content-margin;
+  margin-right: $content-margin;
+  text-align: justify;
+  text-justify: auto;
 }

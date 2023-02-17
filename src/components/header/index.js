@@ -1,3 +1,11 @@
 import React from 'react';
 
-export default () => { return <h1>Concessions in Shanghai</h1>; };
+import './style.scss';
+
+export default () => {
+  return (
+    <div id="header">
+      <h1>Concessions in Shanghai</h1>
+    </div>
+  );
+};

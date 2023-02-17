@@ -24,10 +24,6 @@ module.exports = {
         ],
       },
       {
-        test: /\.(html)$/,
-        use: ['html-loader'],
-      },
-      {
         test: /\.(jpe?g|png|gif|svg|ttf|woff|woff2)$/,
         exclude: /node_modules/,
         use: [
@@ -49,6 +45,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
+      favicon: './src/海.png',
       template: './src/index.html',
     }),
     new CopyPlugin({
