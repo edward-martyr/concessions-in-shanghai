@@ -1,4 +1,4 @@
-const re = /(?![^<]*>|[^<>]*<\/)((https?:)\/\/[a-z0-9&#=.\/\-?_]+)/gi;
+const re = /((?:https?:\/\/|www\.)(?:[a-z0-9\-]+\.)+[a-z0-9]{2,}(?:\/[^<>\s]*)?)/gi;
 
 const urlfy = (domElement) => {
   const textNodes = domElement.querySelectorAll('p, li, td, span, a, div[class^="csl-"]');

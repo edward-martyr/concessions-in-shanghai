@@ -6,7 +6,7 @@
 
 .tooltip {
   text-align: left;
-  max-width: 99%;
+  max-width: calc(min(90%, 30em));
 }
 
 .csl-entry {

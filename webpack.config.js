@@ -1,6 +1,7 @@
 const path = require('path');
 const CompressionPlugin = require('compression-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
@@ -28,14 +29,7 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif|svg|ttf|woff|woff2)$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext][query]',
-            },
-          },
-        ],
+        type: 'asset/resource',
       },
       {
         test: /\.(bib)$/,
@@ -63,5 +57,6 @@ module.exports = {
       ],
     }),
     new CompressionPlugin(),
+    new ESLintPlugin(),
   ],
 };

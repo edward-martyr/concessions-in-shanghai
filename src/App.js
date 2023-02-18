@@ -1,22 +1,28 @@
 import React, { useEffect } from 'react';
 import WebFont from 'webfontloader';
 
-import { Bibliography, Citation, Header } from './components';
+import {
+  Footer, Header,
+} from './components';
+import { Home } from './screens';
 
 const App = () => {
   useEffect(() => {
-    WebFont.load({ typekit: { id: 'rpl2zoy' } });
+    WebFont.load({
+      typekit: { id: 'rpl2zoy' },
+      google: {
+        families: ['Noto Serif KR:400,700&subset=korean'],
+      },
+    });
   }, []);
 
   return (
     <div id="app">
       <Header />
       <div id="content">
-        <p>
-          What <Citation entries={['altmanFlightShanghai193819402000', 'wassersteinSecretWarShanghai1999']} /> is this.
-        </p>
-        <Bibliography />
+        <Home />
       </div>
+      <Footer />
     </div>
   );
 };

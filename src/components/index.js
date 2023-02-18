@@ -1,4 +1,7 @@
 import Header from './header';
+import Footer from './footer';
 import { Bibliography, Citation } from './bibliography';
 
-export { Header, Bibliography, Citation };
+export {
+  Header, Footer, Bibliography, Citation,
+};

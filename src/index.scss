@@ -15,7 +15,9 @@ body {
   background-color: $background-color;
   max-width: 100%;
   overflow-x: clip;
-  font-family: "Minion 3", serif;
+  font-family: minion-3, "Noto Serif KR", serif;
+  font-feature-settings: "onum";
+  font-size: 1.2em;
 
   p + p {
     text-indent: $text-indent;
@@ -34,13 +36,38 @@ body {
   a {
     color: $link-color;
     text-decoration: none;
+    word-wrap: break-word;
     &:hover {
       text-decoration: underline;
     }
   }
 
+  figcaption {
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+
+  .vertical-timeline-element-icon {
+    box-shadow: none !important;
+  }
+
+  .vertical-timeline-element {
+    h3 {
+      margin-bottom: 0.5em;
+    }
+    img {
+      width: 100%;
+      height: 10em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   #content {
-    $content-margin: calc(max(min(((100vw - 30em) / 2), 25%), 10px));
+    $content-margin: calc(
+      max(min(((100vw - 30em) / 2), min(25%, (100vw - 40em) / 2)), 1ex)
+    );
     margin-left: $content-margin;
     margin-right: $content-margin;
     text-align: justify;

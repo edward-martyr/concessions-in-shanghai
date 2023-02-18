@@ -26,7 +26,7 @@ export const Citation = ({ entries }) => {
       {bibs.format('citation', {
         entry: entries,
       })}
-      <ReactTooltip className="tooltip" id={`tooptip-${entries}`} wrapper="span" />
+      <ReactTooltip className="tooltip" id={`tooptip-${entries}`} wrapper="span" clickable />
     </span>
   );
 };
