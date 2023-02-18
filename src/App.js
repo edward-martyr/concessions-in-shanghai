@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import WebFont from 'webfontloader';
 
-import { inlineCite } from './components/bibliography';
-import { Bibliography, Header } from './components';
+import { Bibliography, Citation, Header } from './components';
 
 const App = () => {
   useEffect(() => {
@@ -13,7 +12,9 @@ const App = () => {
     <div id="app">
       <Header />
       <div id="content">
-        <p>{inlineCite(['wassersteinSecretWarShanghai1999'])}</p>
+        <p>
+          What <Citation entries={['altmanFlightShanghai193819402000', 'wassersteinSecretWarShanghai1999']} /> is this.
+        </p>
         <Bibliography />
       </div>
     </div>

@@ -1,0 +1,16 @@
+@import "../../variables";
+
+.citation {
+  border-bottom: 1px dotted black;
+}
+
+.tooltip {
+  text-align: left;
+  max-width: 99%;
+}
+
+.csl-entry {
+  text-align: left;
+  padding-left: $text-indent;
+  text-indent: calc($text-indent * (-1));
+}

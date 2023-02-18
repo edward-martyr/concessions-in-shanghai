@@ -1,4 +1,4 @@
 import Header from './header';
-import Bibliography from './bibliography';
+import { Bibliography, Citation } from './bibliography';
 
-export { Header, Bibliography };
+export { Header, Bibliography, Citation };

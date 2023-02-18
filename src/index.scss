@@ -1,25 +1,49 @@
+@import "./variables";
+
 * {
   margin: 0;
   padding: 0;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+  // user-drag: none;
+  // -webkit-user-drag: none;
+  // user-select: none;
+  // -moz-user-select: none;
+  // -webkit-user-select: none;
+  // -ms-user-select: none;
 }
 
 body {
-  // background-color: $background-color;
+  background-color: $background-color;
   max-width: 100%;
   overflow-x: clip;
-  font-family: 'Minion 3', serif;
-}
+  font-family: "Minion 3", serif;
 
-#content {
-  $content-margin: calc(max(20px, 13%));
-  margin-left: $content-margin;
-  margin-right: $content-margin;
-  text-align: justify;
-  text-justify: auto;
+  p + p {
+    text-indent: $text-indent;
+    * {
+      text-indent: initial;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  #content {
+    $content-margin: calc(max(min(((100vw - 30em) / 2), 25%), 10px));
+    margin-left: $content-margin;
+    margin-right: $content-margin;
+    text-align: justify;
+    text-justify: auto;
+  }
 }
