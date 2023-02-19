@@ -13,4 +13,11 @@
   text-align: left;
   padding-left: $text-indent;
   text-indent: calc($text-indent * (-1));
+  position: absolute;
+  visibility: hidden;
+}
+
+.csl-entry-visible {
+  position: relative;
+  visibility: visible;
 }

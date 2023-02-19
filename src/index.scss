@@ -66,7 +66,7 @@ body {
 
   #content {
     $content-margin: calc(
-      max(min(((100vw - 30em) / 2), min(25%, (100vw - 40em) / 2)), 1ex)
+      max(min(((100vw - 30em) / 2), max(25vw, (100vw - 36em) / 2)), 1ex)
     );
     margin-left: $content-margin;
     margin-right: $content-margin;
