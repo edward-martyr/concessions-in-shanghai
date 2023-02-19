@@ -15,18 +15,31 @@ export const Citation = ({ entries }) => {
     window.addEventListener('load', () => {
       let tmp = '';
       for (const entry of entries) {
-        tmp += `<div class="csl-entry">${document.querySelector(`div[data-csl-entry-id="${entry}"]`).innerHTML}</div>`;
+        tmp += `<div class="csl-entry">${
+          document.querySelector(`div[data-csl-entry-id="${entry}"]`).innerHTML
+        }</div>`;
       }
       setTooltipHTML(tmp);
     });
   }, [tooltipHTML]);
 
   return (
-    <span className="citation" data-tooltip-id={`tooptip-${entries}`} data-tooltip-html={tooltipHTML}>
+    <span
+      className="citation"
+      data-tooltip-id={`tooptip-${entries}`}
+      data-tooltip-html={tooltipHTML}
+    >
       {bibs.format('citation', {
         entry: entries,
       })}
-      <ReactTooltip className="tooltip" id={`tooptip-${entries}`} wrapper="span" clickable />
+      <ReactTooltip
+        className="tooltip"
+        id={`tooptip-${entries}`}
+        wrapper="span"
+        hover
+        click
+        clickable
+      />
     </span>
   );
 };
@@ -36,11 +49,13 @@ export const Bibliography = () => {
 
   useEffect(() => {
     bibRef.current.appendChild(
-      urlfy(bibs.get({
-        format: 'real',
-        type: 'html',
-        style: 'citation-apa',
-      })),
+      urlfy(
+        bibs.get({
+          format: 'real',
+          type: 'html',
+          style: 'citation-apa',
+        }),
+      ),
     );
   }, []);
 

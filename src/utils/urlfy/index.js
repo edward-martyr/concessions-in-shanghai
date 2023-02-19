@@ -1,7 +1,9 @@
 const re = /((?:https?:\/\/|www\.)(?:[a-z0-9\-]+\.)+[a-z0-9]{2,}(?:\/[^<>\s]*)?)/gi;
 
 const urlfy = (domElement) => {
-  const textNodes = domElement.querySelectorAll('p, li, td, span, a, div[class^="csl-"]');
+  const textNodes = domElement.querySelectorAll(
+    'p, li, td, span, a, div[class^="csl-"]',
+  );
 
   for (const textNode of textNodes) {
     const html = textNode.innerHTML;
