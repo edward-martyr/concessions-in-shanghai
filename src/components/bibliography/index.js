@@ -17,7 +17,7 @@ export const Citation = ({ entries }) => {
       for (const entry of entries) {
         const el = document.querySelector(`div[data-csl-entry-id="${entry}"]`);
         el.classList.add('csl-entry-visible');
-        tmp += `<div class="csl-entry">${el.innerHTML}</div>`;
+        tmp += el.outerHTML;
       }
       setTooltipHTML(tmp);
     });
