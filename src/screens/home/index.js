@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 
-import emblemOfAmericanConcession from '../../assets/images/Old_emblem_of_Shanghai.svg';
+import emblemOfShanghai from '../../assets/images/Old_emblem_of_Shanghai.svg';
 import { Bibliography, Citation } from '../../components';
 import './style.scss';
 
@@ -13,12 +13,24 @@ const Home = () => {
     <div id="home">
       <figure>
         <img
-          src={emblemOfAmericanConcession}
-          alt="Emblem of American Concession"
+          className="emblem-of-shanghai"
+          src={emblemOfShanghai}
+          alt="Emblem of Shanghai"
         />
         <figcaption>
           Emblem of Shanghai{' '}
           <Citation entries={['samhaninOldEmblemShanghai']} />
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          className="map-of-central-shanghai"
+          src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Shanghai_1935_S1_AMS-WO.jpg"
+          alt="Shanghai_1935_S1_AMS-WO"
+        />
+        <figcaption>
+          Plan of Shanghai (Sheet 1) <Citation entries={['unitedstatesarmymapservicePlanShanghaiSheet1935']} />
         </figcaption>
       </figure>
 
