@@ -9,9 +9,10 @@
   font-size: 90%;
 
   .divider{
-    height: 1px;
     width: 80%;
-    background-color: #e0e0e0;
+    height: 0;
+    border: none;
+    border-top: 1px dotted #e0e0e0;  
     margin-bottom: 30px;
   }
 }

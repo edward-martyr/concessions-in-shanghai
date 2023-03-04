@@ -10,7 +10,7 @@ export default () => {
         {`© 2023${
           new Date().getFullYear() > 2023 ? `-${new Date().getFullYear()}` : ''
         } Yuanhao Chen. `}
-        For History 77 <i>Imperialism in Modern East Asia</i> Final Project.
+        Built with <a href="https://reactjs.org/">React.js</a> for History 77 <i>Imperialism in Modern East Asia</i> Final Project.
       </div>
     </div>
   );

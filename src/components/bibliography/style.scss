@@ -2,22 +2,24 @@
 
 .citation {
   border-bottom: 1px dotted black;
+
+  .tooltip {
+    text-align: left;
+    max-width: calc(min(90%, 30em));
+  }
 }
 
-.tooltip {
-  text-align: left;
-  max-width: calc(min(90%, 30em));
-}
+#bibliography {
+  .csl-entry {
+    text-align: left;
+    padding-left: $text-indent;
+    text-indent: calc($text-indent * (-1));
+    position: absolute;
+    visibility: hidden;
+  }
 
-.csl-entry {
-  text-align: left;
-  padding-left: $text-indent;
-  text-indent: calc($text-indent * (-1));
-  position: absolute;
-  visibility: hidden;
-}
-
-.csl-entry-visible {
-  position: relative;
-  visibility: visible;
+  .csl-entry-visible {
+    position: relative;
+    visibility: visible;
+  }
 }
