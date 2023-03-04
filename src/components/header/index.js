@@ -9,7 +9,7 @@ export default () => {
         Concessions in Shanghai
       </h1>
       <h2>
-        A Wartime Refuge During the Second Sino-Japanese War
+        A Wartime Haven During the Second Sino-Japanese War
       </h2>
     </div>
   );
