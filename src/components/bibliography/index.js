@@ -29,6 +29,7 @@ export const Citation = ({ entries }) => {
       className="citation"
       data-tooltip-id={`tooptip-${entries}-${randomId}`}
       data-tooltip-html={tooltipHTML}
+      onClick={null}
     >
       {bibs.format('citation', {
         entry: entries,
