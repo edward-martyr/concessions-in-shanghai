@@ -10,12 +10,13 @@ const bibs = new Cite(bibliography);
 
 export const Citation = ({ entries }) => {
   const [tooltipHTML, setTooltipHTML] = useState('');
+  const randomId = crypto.randomUUID();
 
   useEffect(() => {
     window.addEventListener('load', () => {
       let tmp = '';
-      for (const entry of entries) {
-        const el = document.querySelector(`div[data-csl-entry-id="${entry}"]`);
+      for (const entry of new Set([...entries])) {
+        const el = document.querySelector(`div#bibliography div[data-csl-entry-id="${entry}"]`);
         el.classList.add('csl-entry-visible');
         tmp += el.outerHTML;
       }
@@ -26,7 +27,7 @@ export const Citation = ({ entries }) => {
   return (
     <span
       className="citation"
-      data-tooltip-id={`tooptip-${entries}`}
+      data-tooltip-id={`tooptip-${entries}-${randomId}`}
       data-tooltip-html={tooltipHTML}
     >
       {bibs.format('citation', {
@@ -34,7 +35,7 @@ export const Citation = ({ entries }) => {
       })}
       <ReactTooltip
         className="tooltip"
-        id={`tooptip-${entries}`}
+        id={`tooptip-${entries}-${randomId}`}
         wrapper="span"
         hover
         click

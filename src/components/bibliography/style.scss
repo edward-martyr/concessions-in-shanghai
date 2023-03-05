@@ -4,8 +4,12 @@
   border-bottom: 1px dotted black;
 
   .tooltip {
+    font-style: initial;
+    font-weight: initial;
+    font-size: initial;
     text-align: left;
     max-width: calc(min(90%, 30em));
+    z-index: 100;
   }
 }
 

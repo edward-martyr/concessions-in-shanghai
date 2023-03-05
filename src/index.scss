@@ -29,8 +29,11 @@ body {
   h2 {
     text-align: center;
     font-size: 1.5em;
-    margin-top: 1em;
     margin-bottom: 0.5em;
+
+    & + & {
+      margin-top: 1em;
+    }
   }
 
   a {
@@ -42,6 +45,15 @@ body {
     }
   }
 
+  img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
   figcaption {
     font-size: 0.8em;
     text-align: center;
@@ -49,15 +61,15 @@ body {
   }
 
   .fullwidth {
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    width: 100vw;
-    height: auto;
-    max-width: max-content;
-    max-height: max-content;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    width: 100vw !important;
+    height: auto !important;
+    max-width: max-content !important;
+    max-height: max-content !important;
   }
 
   #app {

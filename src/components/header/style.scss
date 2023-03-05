@@ -2,30 +2,41 @@
   position: relative;
   text-align: center;
   width: 100vw;
+  padding-bottom: 1rem;
+  overflow-y: hidden;
 
-  .header-background-overlay {
+  .header-background-overlay-container {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.75);
+    top: 50%;
+    width: 100%;
     color: white;
 
-    h1 {
-      font-size: 2em;
-      font-feature-settings: "smcp";
-      font-weight: normal;
-      font-style: normal;
-      letter-spacing: 0.1em;
-      margin: 0;
-      line-height: 1em;
-    }
-    h2 {
-      font-size: 1.2em;
-      font-weight: normal;
-      font-style: italic;
-      margin: 0;
+    .header-background-overlay {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: max-content;
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 1em;
+      background-color: rgba(0, 0, 0, 0.75);
+
+      h1 {
+        font-size: 2em;
+        font-feature-settings: "smcp";
+        font-weight: normal;
+        font-style: normal;
+        letter-spacing: 0.1em;
+        margin: 0;
+        line-height: 1em;
+      }
+      h2 {
+        font-size: 1.2em;
+        font-weight: normal;
+        font-style: italic;
+        margin: 0;
+      }
     }
   }
 

@@ -19,19 +19,20 @@ export default () => {
         </figcaption>
       </figure>
 
-      <div className="header-background-overlay">
-        <Parallax rootMargin={{
-          top: 0, bottom: -300,
-        }}
-          scale={[0.9, 1, 'easeInQuad']}
-          opacity={[0.75, 1]}
+      <div className="header-background-overlay-container">
+        <Parallax
+          translateY={['-50vh', '10vh']}
+          scale={[0.8, 1.2, 'easeInQuad']}
+          opacity={[0.75, 0.95]}
         >
-          <h1>
-            Concessions in Shanghai
-          </h1>
-          <h2>
-            A Wartime Haven During the Second Sino-Japanese War
-          </h2>
+          <div className="header-background-overlay">
+            <h1>
+              Concessions in Shanghai
+            </h1>
+            <h2>
+              A Wartime Haven During the Second Sino-Japanese War
+            </h2>
+          </div>
         </Parallax>
       </div>
 
