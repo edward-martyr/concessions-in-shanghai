@@ -6,6 +6,7 @@ import urlfy from '../../utils/urlfy';
 import bibliography from './index.bib';
 import './style.scss';
 
+const bibLoadEvent = new CustomEvent('onBibLoad');
 const bibs = new Cite(bibliography);
 
 export const Citation = ({ entries }) => {
@@ -13,7 +14,7 @@ export const Citation = ({ entries }) => {
   const randomId = crypto.randomUUID();
 
   useEffect(() => {
-    window.addEventListener('load', () => {
+    window.addEventListener('onBibLoad', () => {
       let tmp = '';
       for (const entry of new Set([...entries])) {
         const el = document.querySelector(`div#bibliography div[data-csl-entry-id="${entry}"]`);
@@ -59,6 +60,7 @@ export const Bibliography = () => {
         }),
       ),
     );
+    window.dispatchEvent(bibLoadEvent);
   }, []);
 
   return (
