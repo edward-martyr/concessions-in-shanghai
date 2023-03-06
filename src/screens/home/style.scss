@@ -1,12 +1,14 @@
 #home {
   counter-reset: section;
 
+  h2,
   .section {
-    counter-reset: subsection;
-
     text-transform: lowercase;
     font-feature-settings: "onum", "smcp";
+  }
 
+  .section {
+    counter-reset: subsection;
     &::before {
       counter-increment: section;
       content: counter(section) ". ";
@@ -80,9 +82,6 @@
         style: italic;
         weight: 400;
       }
-      @media (min-width: 62em) {
-        font-size: 1.1em;
-      }
     }
     section.year {
       position: relative;
@@ -112,20 +111,12 @@
           margin: 0;
           padding: 0 0 0 89px;
           color: #c5c5c5;
-          @media (min-width: 62em) {
-            font-size: 1em;
-          }
         }
         ul {
           list-style-type: none;
           padding: 0 0 0 75px;
           margin: -1.35rem 0 1em;
           max-width: 32rem;
-          font-size: 1em;
-          @media (min-width: 62em) {
-            font-size: 1.1em;
-            padding: 0 0 0 81px;
-          }
           &:last-child {
             margin: {
               bottom: 0;
@@ -149,6 +140,7 @@
             &:before {
               content: "⋅";
               position: absolute;
+              font-weight: bold;
               left: -1.5ex;
             }
             &:not(:first-child) {

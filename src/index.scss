@@ -15,9 +15,13 @@ body {
   background-color: $background-color;
   max-width: 100%;
   overflow-x: clip;
+  line-height: 1.5;
   font-family: minion-3, "Noto Serif KR", serif;
   font-feature-settings: "onum";
-  font-size: 1.2em;
+  font-size: 16pt;
+  @media screen and (max-width: 600px) {
+    font-size: 14pt;
+  }
 
   p + p {
     text-indent: $text-indent;
