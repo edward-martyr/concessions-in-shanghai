@@ -3,9 +3,8 @@ on:
     branches: [ master ]
 
 jobs:
-  react-ci-cd:
-    name: React CI/CD
-    runs-on: macos-12
+  build:
+    runs-on: macos-latest
     env:
       CI: false
     steps:
@@ -16,5 +15,22 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: npm install
+      - name: Build
+        run: npm run build
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build
+  deploy:
+    runs-on: ubuntu-latest
+    needs: react-ci-cd
+    steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
