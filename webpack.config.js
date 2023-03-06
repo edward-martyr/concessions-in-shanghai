@@ -59,4 +59,7 @@ module.exports = {
     new CompressionPlugin(),
     new ESLintPlugin(),
   ],
+  resolve: {
+    extensions: ['.js'],
+  },
 };
