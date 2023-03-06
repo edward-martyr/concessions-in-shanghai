@@ -59,4 +59,8 @@ module.exports = {
     new CompressionPlugin(),
     new ESLintPlugin(),
   ],
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.css', '.scss'],
+    modules: ['src', 'node_modules'],
+  },
 };
