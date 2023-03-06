@@ -158,7 +158,8 @@ const Home = () => {
                   <ul>
                     <h4>Prosperity of the Bund</h4>
                     <li>
-                      As
+                      As the following painting depicts, the Bund was already scattered with a few Western buildings at the time, and Western water sports such as regatta was played on Whangpoo River.
+                      Notably, most of the buildings were foreign companies, including Gibb, Livingstone & Co., Augustine Heard & Co., Jardine, Matheson & Co., Orient (P & O) Company, and so on.
                       <figure>
                         <div className="scroll">
                           <img className="auto-scroll" src={bund1849} alt="The Bund in 1849–1850" />
