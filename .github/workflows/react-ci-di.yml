@@ -5,7 +5,7 @@ on:
 jobs:
   react-ci-cd:
     name: React CI/CD
-    runs-on: windows-latest
+    runs-on: macos-latest
     env:
       CI: false
     steps:
