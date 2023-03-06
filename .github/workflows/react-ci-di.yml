@@ -5,7 +5,7 @@ on:
 jobs:
   react-ci-cd:
     name: React CI/CD
-    runs-on: ubuntu-latest
+    runs-on: macos-12
     env:
       CI: false
     steps:
@@ -13,7 +13,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
       - name: Install dependencies
         run: npm install
       - name: Build
