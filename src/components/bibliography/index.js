@@ -17,7 +17,7 @@ export const Citation = ({ entries }) => {
     window.addEventListener('onBibLoad', () => {
       let tmp = '';
       for (const entry of new Set([...entries])) {
-        const el = document.querySelector(`div#bibliography div[data-csl-entry-id="${entry}"]`);
+        const el = document.querySelector(`section#bibliography div[data-csl-entry-id="${entry}"]`);
         el.classList.add('csl-entry-visible');
         tmp += el.outerHTML;
       }
@@ -64,8 +64,8 @@ export const Bibliography = () => {
   }, []);
 
   return (
-    <div id="bibliography" ref={bibRef}>
+    <section id="bibliography" ref={bibRef}>
       <h2>Bibliography</h2>
-    </div>
+    </section>
   );
 };

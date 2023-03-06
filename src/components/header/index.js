@@ -30,7 +30,7 @@ export default () => {
               Concessions in Shanghai
             </h1>
             <h2>
-              A Wartime Haven During the Second Sino-Japanese War
+              Consequence of Aggression, Nevertheless Refuge Therefrom
             </h2>
           </div>
         </Parallax>

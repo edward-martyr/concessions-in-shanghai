@@ -2,6 +2,7 @@ import React from 'react';
 import Hyphenated from 'react-hyphen';
 
 import emblemOfShanghai from '../../assets/images/Old_emblem_of_Shanghai.svg';
+import bund1849 from '../../assets/images/Bund1850 painting.jpg';
 import { Bibliography, Citation } from '../../components';
 import './style.scss';
 
@@ -153,24 +154,40 @@ const Home = () => {
                     </li>
                   </ul>
                 </section>
+                <section>
+                  <ul>
+                    <h4>Prosperity of the Bund</h4>
+                    <li>
+                      As
+                      <figure>
+                        <div className="scroll">
+                          <img className="auto-scroll" src={bund1849} alt="The Bund in 1849–1850" />
+                        </div>
+                        <figcaption>
+                          General view of the Bund (painting) — 1849–1850 <Citation entries={['virtualcitiesprojectinstitutdasieorientaleGeneralViewBund']} />
+                        </figcaption>
+                      </figure>
+                    </li>
+                  </ul>
+                </section>
               </section>
             </div>
           </div>
 
           {/* <h3 className="vertical-timeline-element-title">
-        American Concession in Shanghai
-        </h3>
-        <p>
-          In 1845, the bishop of the American Episcopal Church W. J. Boone
-          bought an area in Hongkew (虹口 Hongkou) to create real estates in Shanghai,
-          in the name of building a church. Later Boone proposed to create an
-          American settlement and in 1848, the Shanghai County approved the
-          proposal. On 25 June 1863 American consul George Seward signed an
-          agreement with the head of Shanghai County Huang Fang (黃芳) to
-          create the American Concession in Shanghai, which also confirmed the
-          boundary of area.
-        </p>
-        1848-1863 */}
+          American Concession in Shanghai
+          </h3>
+          <p>
+            In 1845, the bishop of the American Episcopal Church W. J. Boone
+            bought an area in Hongkew (虹口 Hongkou) to create real estates in Shanghai,
+            in the name of building a church. Later Boone proposed to create an
+            American settlement and in 1848, the Shanghai County approved the
+            proposal. On 25 June 1863 American consul George Seward signed an
+            agreement with the head of Shanghai County Huang Fang (黃芳) to
+            create the American Concession in Shanghai, which also confirmed the
+            boundary of area.
+          </p>
+          1848-1863 */}
 
           <figure>
             <img
