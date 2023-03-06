@@ -13,14 +13,17 @@ const Home = () => {
           In the popular reference book series <cite>Twentieth Century Impressions</cite> <Citation entries={['wrightTwentiethCenturyImpressions']} /> published in Britain and edited by Arnold Wright, who was an enthusiast for colonial imperialism <Citation entries={['wrightRomanceColonisationBeing1923']} />, Shanghai is depicted as a major cotton, silk and fertiliser export port in the 18th and early 19th centuries. It was fashioned as “an important centre of trade”, even “before [it] attracted European notice”.
         </p>
         <p>
-          As Wright narrates, as early as in 1756, Shanghai began to attract British interest, with Frederick Pigou, a member of the East India Company, noting it down in his memo. However, the Company’s attempts to make Shanghai a central trading port for tea, silk, and opium were unsuccessful, rebuked by the local officials. It was not until during the First Opium War, when the British navy sailed into the waters of Shanghai, that the naval officers were struck by the position of Shanghai in terms of trade, and therefore Shanghai was included as one of the treaty ports in the Treaty of Nanking (南京條約) in 1842 “almost as a matter of course” <Citation entries={['wrightTwentiethCenturyImpressions']} />.
+          As Wright narrates, as early as in 1756, Shanghai began to attract British interest, with Frederick Pigou, a member of the East India Company, noting it down in his memo. However, the Company’s attempts to make Shanghai a central trading port for tea, silk, and opium were unsuccessful, rebuked by the local officials. It was not until during the First Opium War, when the British navy sailed into the waters of Shanghai, that the naval officers were struck by the position of Shanghai in terms of trade, and therefore Shanghai was included as one of the treaty ports in the Treaty of Nanking (南京條約) in 1842.
+        </p>
+        <p>
+          To Wright, the opening of Shanghai to Britain was “almost as a matter of course”: It was the port of the most economic interest, maybe next to Canton, to the British. “There is no more interesting” than the inevitable event that the “self-contained, self-absorbed, […], narrow, [and ignorant]” East clashed with the “bustling, aggressive” West; the fallout that the West forced open treaty ports, or in Wright’s wording, breathed the air of “a new commercial life”, should be a lesson to the Chinese, who must learn “the advantages of Western civilisation”, including free trade.
         </p>
         <p>
           The British imperialists’ fervent interest in Shanghai only was the beginning, projecting growing interest from other Western imperialists, notably France and the US, who followed quickly with their own advances in Shanghai, and thereby established concessions in Shanghai respectively.
         </p>
 
         <p>
-          In the following timeline, I will refer to primary sources and early 20th-century secondary sources to trace the history of Shanghai regarding the establishment and development of concessions, to provide an original perspective.
+          In the following timeline, I will refer to primary sources as well as early 20th-century secondary sources to trace the history of Shanghai regarding the establishment and development of concessions; while some sources (such as Wright) are heavily opinionated, some are less so and are peer-reviewed journal articles, allowing me to present an original and comprehensive perspective.
         </p>
         <div className="timeline">
           <div>
@@ -94,6 +97,17 @@ const Home = () => {
               </section>
             </section>
             <section className="year">
+              <h3 className="year">1844</h3>
+              <section>
+                <ul>
+                  <h4>More treaties</h4>
+                  <li>
+                    In this year, France and the US respectively made similar treaties with China following the the example of Britain <Citation entries={['hudsonInternationalProblemsShanghai1927']} />.
+                  </li>
+                </ul>
+              </section>
+            </section>
+            <section className="year">
               <h3 className="year">1845</h3>
               <section>
                 <ul>
@@ -105,24 +119,36 @@ const Home = () => {
               </section>
               <section>
                 <ul>
-                  <h4>Prelude to the American Concession</h4>
+                  <h4>Prelude to the American Settlement</h4>
                   <li>
-                    Americans were yet to establish a formal concession, but they started to gather around Hongkew (虹口 Hongkou), East Shanghai, which would later be the site of the American Concession.
+                    Americans were yet to establish a formal concession, but they started to gather around Hongkew (虹口 Hongkou), East Shanghai, which would later be the site of the American Settlement.
                   </li>
                 </ul>
               </section>
             </section>
-            {/* <section className="year">
-              <h3 className="year">1846</h3>
+            <section className="year">
+              <h3 className="year">1848</h3>
               <section>
                 <ul>
-                  <h4>Establishment of the British Concession</h4>
+                  <h4>Establishment of the American Settlement</h4>
                   <li>
-                    With the previous treaties paving their way, the British established a settlement in Shanghai, and promulgated the Land Regulations of 1845, clearly setting the boundaries of the settlement <Citation entries={['hudsonInternationalProblemsShanghai1927']} />. Ironically, the agreement between the British consul and the Intendant (道臺 Daotai) of Shanghai was reached completely without due care, after they wished each other “daily happiness” <Citation entries={['lockwoodInternationalSettlementShanghai1934']} />.
+                    A bishop of the American Episcopal Church, W. J. Boone, bought an area in Hongkew to create real estates in Shanghai, in the name of building a church back in 1845. He proposed to create an American settlement and in 1848, the Intendant of Shanghai approved the proposal <Citation entries={['hudsonInternationalProblemsShanghai1927']} />.
+                    Again, this can be seen as also not very formal, albeit to a lesser degree than how the British Settlement was casually agreed upon, in that Boone was just a bishop, a private individual owning land supposedly for the purpose of building a church, and the Intendant of Shanghai simply approved the establishment of an American settlement.
                   </li>
                 </ul>
               </section>
-            </section> */}
+            </section>
+            <section className="year">
+              <h3 className="year">1849</h3>
+              <section>
+                <ul>
+                  <h4>Establishment of the French Concession</h4>
+                  <li>
+                    On April 6, 1849, the French consul in Shanghai, Charles de Montigny, signed an agreement with the Intendant of Shanghai, to establish the French Concession in Shanghai. It was bound by Yang-King-Pang Creek (洋涇浜) on the south, by the Chinese City wall and by Whangpoo River on the east; to its north was the British Settlement, but to its west there was no boundaries, and it could be extended as need be <Citation entries={['lepaludHistoryFrenchConcession1935']} />.
+                  </li>
+                </ul>
+              </section>
+            </section>
           </div>
         </div>
 

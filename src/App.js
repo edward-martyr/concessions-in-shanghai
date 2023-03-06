@@ -16,8 +16,6 @@ const App = () => {
     });
   }, []);
 
-  document.oncontextmenu = () => false;
-
   return (
     <div id="app">
       <Header />

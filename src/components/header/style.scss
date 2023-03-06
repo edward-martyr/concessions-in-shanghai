@@ -3,7 +3,7 @@
   text-align: center;
   width: 100vw;
   padding-bottom: 1rem;
-  overflow-y: hidden;
+  overflow-y: clip;
 
   .header-background-overlay-container {
     position: absolute;
