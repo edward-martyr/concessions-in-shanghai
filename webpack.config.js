@@ -60,7 +60,10 @@ module.exports = {
     new ESLintPlugin(),
   ],
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.css', '.scss'],
-    modules: ['src', 'node_modules'],
+    extensions: ['.js', '.scss'],
+    modules: [
+      path.join(__dirname, 'node_modules'),
+      path.join(__dirname, 'src'),
+    ],
   },
 };
