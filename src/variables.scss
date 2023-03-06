@@ -1,3 +1,7 @@
+$content-margin: calc(
+  max(min(((100vw - 30em) / 2), max(25vw, (100vw - 36em) / 2)), 1ex)
+);
+
 $text-indent: min(0.5in, 10%);
 
 $background-color: #f5f5f5;

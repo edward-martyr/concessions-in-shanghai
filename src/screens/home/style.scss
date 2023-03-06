@@ -1,3 +1,5 @@
+@import "../../variables";
+
 #home {
   counter-reset: section;
 
@@ -107,7 +109,7 @@
           list-style-type: none;
           padding: 0 0 0 75px;
           margin: -1.35rem 0 1em;
-          max-width: 32rem;
+          max-width: calc(100vw - 2 * $content-margin - 12px - 75px);
           &:last-child {
             margin: {
               bottom: 0;
