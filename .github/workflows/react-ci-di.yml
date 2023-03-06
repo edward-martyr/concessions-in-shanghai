@@ -5,7 +5,7 @@ on:
 jobs:
   react-ci-cd:
     name: React CI/CD
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     env:
       CI: false
     steps:
