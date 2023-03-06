@@ -24,9 +24,11 @@ const Home = () => {
           <p>
             The British imperialists’ fervent interest in Shanghai only was the beginning, projecting growing interest from other Western imperialists, notably France and the US, who followed quickly with their own advances in Shanghai, and thereby established concessions in Shanghai respectively.
           </p>
-
           <p>
-            In the following timeline, I will refer to primary sources as well as early 20th-century secondary sources to trace the history of Shanghai regarding the establishment and development of concessions; while some sources (such as Wright) are heavily opinionated, some are less so and are peer-reviewed journal articles, allowing me to present an original and comprehensive perspective.
+            Whereas the concessions are the result of Western imperialist advances in Shanghai, we also have to see that the aggression of the “Treaty Powers” was the underpinning and unchangeable background of the time, but in a smaller scope, there were also successful humanitarian efforts within the concessions to provide refuge for people, Chinese and foreign, from more imminent, and more violent dangers.
+          </p>
+          <p>
+            In the following timeline, I will refer to primary sources as well as early 20th-century secondary sources to trace the history of Shanghai regarding the establishment and development of concessions; while some sources (such as Wright) are fairly opinionated, some are less so and are peer-reviewed journal articles, allowing me to present an original and comprehensive perspective on concessions in Shanghai.
           </p>
           <div className="timeline">
             <div>
@@ -138,6 +140,9 @@ const Home = () => {
                       A bishop of the American Episcopal Church, W. J. Boone, bought an area in Hongkew to create real estates in Shanghai, in the name of building a church back in 1845. He proposed to create an American settlement and in 1848, the Intendant of Shanghai approved the proposal <Citation entries={['hudsonInternationalProblemsShanghai1927']} />.
                       Again, this can be seen as also not very formal, albeit to a lesser degree than how the British Settlement was casually agreed upon, in that Boone was just a bishop, a private individual owning land supposedly for the purpose of building a church, and the Intendant of Shanghai simply approved the establishment of an American settlement.
                     </li>
+                    <li>
+                      Further, the informality can be seen from the fact that the official boundaries of the American Settlement were not clearly defined until 13 years later, in 1863, which is also the year that it was merged with the British Settlement, the last year that it actually existed <Citation entries={['hudsonInternationalProblemsShanghai1927']} />.
+                    </li>
                   </ul>
                 </section>
               </section>
@@ -156,39 +161,58 @@ const Home = () => {
                 </section>
                 <section>
                   <ul>
-                    <h4>Prosperity of the Bund</h4>
+                    <h4>Growing Prosperity of the Bund</h4>
                     <li>
                       As the following painting depicts, the Bund was already scattered with a few Western buildings at the time, and Western water sports such as regatta was played on Whangpoo River.
                       Notably, most of the buildings were foreign companies, including Gibb, Livingstone & Co., Augustine Heard & Co., Jardine, Matheson & Co., Orient (P & O) Company, and so on.
                       <figure>
                         <div className="scroll">
-                          <img className="auto-scroll" src={bund1849} alt="The Bund in 1849–1850" />
+                          <div className="auto-scroll">
+                            <span className="scroll-indicator">→</span>
+                            <img src={bund1849} alt="The Bund in 1849–1850" />
+                          </div>
                         </div>
                         <figcaption>
                           General view of the Bund (painting) — 1849–1850 <Citation entries={['virtualcitiesprojectinstitutdasieorientaleGeneralViewBund']} />
                         </figcaption>
                       </figure>
                     </li>
+                    <li>
+                      This is the first one of a series of paintings depicting the Bund from 1849 to 1879, which all show the growing prosperity of the Bund, which was the central area of the concessions. I will append the entire series of paintings at the end of this section.
+                    </li>
+                  </ul>
+                </section>
+              </section>
+              <section className="year">
+                <h3 className="year">1853</h3>
+                <section>
+                  <ul>
+                    <h4>Abandonment of Exclusion Policies</h4>
+                    <li>
+                      Originally, the concessions were exclusive to the respective nationals, and in particular, the Chinese were not allowed to enter any of the concessions. However, the regulations gradually loosened, when disturbances arose in the Chinese town, and people would flock into the concessions for refuge.
+                    </li>
+                    <li>
+                      In 1853, with Taiping (太平) Rebellion spreading into Shanghai, the American consul urged that Chinese refugees be permitted to stay in the concessions, which was a major milestone pushing the cooperation between concessions and abandoning efforts of exclusion <Citation entries={['hudsonInternationalProblemsShanghai1927']} />.
+                    </li>
+                  </ul>
+                </section>
+              </section>
+              <section className="year">
+                <h3 className="year">1863</h3>
+                <section>
+                  <ul>
+                    <h4>Establishment of the International Settlement</h4>
+                    <li>
+                      After just about over a decade of existence, the American and British Settlements were amalgamated into a single foreign concession, later called the International Settlement by agreement <Citation entries={['fraserStatusInternationalSettlement1939']} />.
+                    </li>
+                    <li>
+                      The French Concession did not take part in the amalgamation, and remained as a separate concession.
+                    </li>
                   </ul>
                 </section>
               </section>
             </div>
           </div>
-
-          {/* <h3 className="vertical-timeline-element-title">
-          American Concession in Shanghai
-          </h3>
-          <p>
-            In 1845, the bishop of the American Episcopal Church W. J. Boone
-            bought an area in Hongkew (虹口 Hongkou) to create real estates in Shanghai,
-            in the name of building a church. Later Boone proposed to create an
-            American settlement and in 1848, the Shanghai County approved the
-            proposal. On 25 June 1863 American consul George Seward signed an
-            agreement with the head of Shanghai County Huang Fang (黃芳) to
-            create the American Concession in Shanghai, which also confirmed the
-            boundary of area.
-          </p>
-          1848-1863 */}
 
           <figure>
             <img

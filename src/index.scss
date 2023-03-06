@@ -77,22 +77,45 @@ body {
   .scroll {
     overflow-x: scroll;
 
-    .auto-scroll {
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-        50% {
-          transform: translateX(1ex);
-        }
-        100% {
-          transform: translateX(0);
-        }
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
       }
-      animation: scroll 1s linear infinite;
-      animation-timing-function: ease-in-out;
+      50% {
+        transform: translateX(1ex);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .auto-scroll {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+
+      .scroll-indicator {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: -1.5em;
+        width: 2em;
+        height: 2em;
+        border-radius: 2em;
+        background-color: rgba(128, 128, 128, 0.1);
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 0.8em;
+        font-family: sans-serif;
+
+        animation: scroll 1s linear infinite;
+        animation-timing-function: ease-in-out;
+      }
       &:hover {
-        animation-play-state: paused;
+        .scroll-indicator {
+          animation: none;
+        }
       }
     }
 
