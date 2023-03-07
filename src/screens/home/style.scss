@@ -5,6 +5,7 @@
 
   h2,
   .section {
+    margin: 0.5em 0;
     text-transform: lowercase;
     font-feature-settings: "onum", "smcp";
   }
@@ -15,6 +16,11 @@
       counter-increment: section;
       content: counter(section) ". ";
     }
+  }
+
+  h3,
+  .subsection {
+    margin: 0.5em 0;
   }
 
   .subsection {

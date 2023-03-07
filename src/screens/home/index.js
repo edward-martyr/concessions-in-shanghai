@@ -8,6 +8,15 @@ import bund1857 from '../../assets/images/bund1857painting.jpg';
 import bund1862 from '../../assets/images/bund1862painting.jpg';
 import bund1867 from '../../assets/images/bund1867painting.jpg';
 import bund1879 from '../../assets/images/bund1879painting.jpg';
+import frenchConcession1865 from '../../assets/images/ID_329_1870.jpg';
+import frenchConcession1900 from '../../assets/images/Plan_de_la_concession_française_[...]Chollot_Joseph-Julien_btv1b53058954s.jpeg';
+import concession1870 from '../../assets/images/IFN_7885953.jpg';
+import warNowInShanghai from '../../assets/images/commonwealth_9s161h801_access_full.jpg';
+import bombedNantaoScene from '../../assets/images/BOMBEDNANTAOSCENE1937.png';
+import japanesePromise from '../../assets/images/abendJapanesePromiseNot1937.png';
+import newNantaoBombing from '../../assets/images/timesNEWNANTAOBOMBING1937.png';
+import fleeNantao from '../../assets/images/Fleeing from Nanshi.jpeg';
+import refugeeAtGate from '../../assets/images/127E2.jpg';
 import { Bibliography, Citation, Ornament } from '../../components';
 import './style.scss';
 
@@ -33,7 +42,7 @@ const Home = () => {
             Whereas the concessions are the result of Western imperialist advances in Shanghai, we also have to see that the aggression of the “Treaty Powers” was the underpinning and unchangeable background of the time, but in a smaller scope, there were also successful humanitarian efforts within the concessions to provide refuge for people, Chinese and foreign, from more imminent, and more violent dangers.
           </p>
           <p>
-            In the following timeline, I will refer to primary sources as well as early 20th-century secondary sources to trace the history of Shanghai regarding the establishment and development of concessions; while some sources (such as Wright) are fairly opinionated, some are less so and are peer-reviewed journal articles, allowing me to present an original and comprehensive perspective on concessions in Shanghai.
+            In the following timeline and throughout this project, I will mainly refer to primary sources as well as early 20th-century secondary sources to trace the history of Shanghai regarding the establishment and development of concessions; while some sources (such as Wright) are fairly opinionated, some are less so and are peer-reviewed journal articles, allowing me to present an original and comprehensive perspective on concessions in Shanghai.
           </p>
 
           <Ornament />
@@ -50,7 +59,7 @@ const Home = () => {
                         alt="Emblem of Shanghai"
                       />
                       <figcaption>
-                        Emblem of Shanghai in Qing Dynasty <Citation entries={['samhaninOldEmblemShanghai']} />
+                        Emblem of Shanghai in Qing Dynasty <Citation entries={['samhaninOldEmblemShanghai']} />.
                       </figcaption>
                     </figure>
                     <li>
@@ -180,12 +189,12 @@ const Home = () => {
                           </div>
                         </div>
                         <figcaption>
-                          General view of the Bund (painting) — 1849–1850 <Citation entries={['virtualcitiesprojectinstitutdasieorientaleGeneralViewBund']} />
+                          General view of the Bund (painting) — 1849–1850 <Citation entries={['virtualcitiesprojectinstitutdasieorientaleGeneralViewBund']} />.
                         </figcaption>
                       </figure>
                     </li>
                     <li>
-                      This is the first one of a series of paintings depicting the Bund from 1849 to 1879, which all show the growing prosperity of the Bund, which was the central area of the concessions. I will append the entire series of paintings at the end of this section.
+                      This is the first one of a series of paintings depicting the Bund from 1849 to 1879, which all reflect the growing prosperity of the Bund — the central area of the concessions. I will append the entire series of paintings later in this section.
                     </li>
                   </ul>
                 </section>
@@ -240,7 +249,7 @@ const Home = () => {
             Nevertheless, based on this basic layout, the concessions were still fast developing and expanding.
           </p>
           <p>
-            As mentioned above, below is a series of paintings done by the same artist <Citation entries={['virtualcitiesprojectinstitutdasieorientaleGeneralViewBund']} />, depicting the Bund from 1849 to 1879. The paintings depict and thus document the rigorous growth of the Bund, the central area of the concessions. Each year, we gradually see more foreign buildings and boats in greater size and number; the painter had to zoom out, almost using panorama, to fit the growing content of the paintings.
+            As mentioned above, below is a series of paintings done by the same artist <Citation entries={['virtualcitiesprojectinstitutdasieorientaleGeneralViewBund']} />, depicting the Bund over the three decades of 1849–1879, from the viewpoint of the east side of Whangpoo River (浦東, Pudong). The paintings depict and thus document the rigorous growth of the Bund, the central area of the concessions. Each year, we gradually see more foreign buildings and boats in greater size and number; the painter had to zoom out, either giving more portion to the sky and the river to maintain the aspect ratio or using panorama, to fit the growing content of the paintings.
           </p>
           {
             [bund1849, bund1854, bund1857, bund1862, bund1867, bund1879].map((img) => (
@@ -249,8 +258,34 @@ const Home = () => {
               </figure>
             ))
           }
-          <Ornament />
 
+          <Ornament />
+          <p>
+            In addition to the paintings, here are the maps of the French Concession in 1865 and 1900 respectively. In 1865, the French Concession was still a narrow area bounded between the north wall of the Chinese City, Whangpoo River (<i>Wampou Rivière</i>) and Yang-King-Pang below the British Settlement (it is glossed <i>Concession Anglaise</i> on the map, but it should have been merged into the International Settlement then). By 1900, the French Concession had expanded significantly into the west, now half-surrounding Nantao.
+          </p>
+          <figure>
+            <img className="fullwidth" src={frenchConcession1865} alt="French Concession in 1865" />
+            <figcaption>
+              Plan of French Concession in 1865 <Citation entries={['virtualcitiesprojectinstitutdasieorientalePlanConcessionFrancaise1870']} />.
+            </figcaption>
+          </figure>
+          <figure>
+            <img className="fullwidth" src={frenchConcession1900} alt="French Concession in 1900" />
+            <figcaption>
+              Plan of French Concession in 1900 <Citation entries={['virtualcitiesprojectinstitutdasieorientalePlanConcessionFrancaise1900']} />.
+            </figcaption>
+          </figure>
+
+          <Ornament />
+          <p>
+            Furthermore, here are two maps allowing us to compare the overall expansion of concessions in Shanghai between 1870 and 1935. The comparison is stunning: In 1870, the concessions still had very little geographical extension, either longitudinal or latitudinal; the left half of the map is basically empty, scattered with a few main roads; the central area of the concessions was only a little wider than the Chinese city. By 1935, the geography had changed dramatically: The concessions had expanded to the west, the east, and the north, giving significant longitudinal extension to the concessions; the concessions had become the dominant urban space in Shanghai. Interestingly, the scope of the map had finally expanded so that most of today’s city centre was included in the map; I used to live in the upper-right corner of the map.
+          </p>
+          <figure>
+            <img className="fullwidth" src={concession1870} alt="Shanghai in 1870" />
+            <figcaption>
+              Street plan of the English, French and American Settlements, Shanghai <Citation entries={['virtualcitiesprojectinstitutdasieorientaleStreetPlanEnglish1870']} />.
+            </figcaption>
+          </figure>
           <figure>
             <img
               className="fullwidth"
@@ -258,9 +293,87 @@ const Home = () => {
               alt="Plan of Shanghai (Sheet 1)"
             />
             <figcaption>
-              Plan of Shanghai (Sheet 1) <Citation entries={['unitedstatesarmymapservicePlanShanghaiSheet1935']} />
+              Plan of Shanghai (Sheet 1) <Citation entries={['unitedstatesarmymapservicePlanShanghaiSheet1935']} />.
             </figcaption>
           </figure>
+          <p>
+            Most of the expansion was never regulated by the Chinese government; there was opposition that these were out of the boundaries of the settlements and therefore should be regulated by Chinese since 1925. In July, 1930, the Municipal Council finally decided that they might return some disputed areas to China, but this decision was never carried out before the Japanese expanded into those areas <Citation entries={['lockwoodInternationalSettlementShanghai1934']} />.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="section">Japanese Imperialist Advances</h2>
+          <p>
+            Although a newcomer in the imperialist game in the late 19th century, Japan quickly found its place in the International Settlement after it was open to the Treaty Powers. In 1900, there were only 736 Japanese residents in Shanghai; in 1925, there were 13,804 of them. In 1927, two of the nine members of the Municipal Council were Japanese, showing that they had not only grown in numbers, but also in political influence in the International Settlement <Citation entries={['hudsonInternationalProblemsShanghai1927']} />.
+          </p>
+
+          <section>
+            <h3 className="subsection">Shanghai Incident (一二八事變/第一次上海事變)</h3>
+            <p>
+              After victorious military advances in Northern China, including the Mukden Incident (九一八事變/滿州事變), Japan turned its focus to Shanghai in January, 1932. The Japanese, using Hongkew, which had turned from the initial American Settlement to a de facto Japanese Settlement, as their base, brutally attacked the neighbouring district of Chapei (閘北 Zhabei), attacking nearby aerodromes and burning down residential areas <Citation entries={['liZhonghuaMinguoShi2011']} />.
+            </p>
+            <p>
+              Because the other Treaty Powers’ interests were involved in Shanghai, they attempted to negotiate a ceasefire in Shanghai. The initial ceasefire was agreed upon one month after the breakout of the conflict, but soon broken. The British, Americans and French attempted to negotiate a second ceasefire between China and Japan, but never succeeded. In March, the KMT army had to retreat eventually because of new Japanese forces approaching from inland to Shanghai. A peace agreement was reached later in May, stating that Shanghai was to be demilitarised, but only for China, while Japan could still deploy military in the city <Citation entries={['liZhonghuaMinguoShi2011']} />.
+            </p>
+            <figure>
+              <img className="halfwidth" src={warNowInShanghai} alt="Shanghai Incident" />
+              <figcaption>
+                Map showing Japanese-Chinese warfare now in Shanghai <Citation entries={['suMapShowingJapaneseChinese1932']} />.
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <h3 className="subsection">Battle of Shanghai (淞滬會戰/第二次上海事變)</h3>
+            <p>
+              After the Marco Polo Bridge Incident (卢沟桥事变) in July, 1937 near Peking, Japanese invasion of Northern China began.
+              As the beginning of its invasion of Southern China, i.e., marking a full-scale invasion of all of China,
+              in August, 1937, the Japanese army launched a full-scale attack on Shanghai, with the aim of capturing the city.
+            </p>
+            <p>
+              With further reinforcements from Japan in mid-August, the Japanese upscaled their attack on Shanghai, starting to repeatedly bomb civilian areas, especially the Chinese City of Nantao.
+            </p>
+            <p>
+              For example, a news article reported that on August 29, there was a horrifying round of bombing in Nantao <Citation entries={['BOMBEDNANTAOSCENE1937']} />.
+              <figure>
+                <img src={bombedNantaoScene} alt="Bombed Nantao Scene" />
+              </figure>
+              On the next day, August 30, the Japanese promised not to bomb Nantao again “at the present time” <Citation entries={['abendJapanesePromiseNot1937']} />.
+              <figure>
+                <img src={japanesePromise} alt="Japanese Promise Not to Bomb Civilians 'at the Present Time'" />
+              </figure>
+              But soon enough, the Japanese broke their promise, and on September 6, they bombed Nantao again. The unreliability of Japanese bombing frightened the residents of Shanghai, including the foreign residents in the concessions <Citation entries={['timesNEWNANTAOBOMBING1937']} />.
+              <figure>
+                <img src={newNantaoBombing} alt="New Nantao Bombing" />
+              </figure>
+            </p>
+            <p>
+              Scared by the terrifying bombs, lots of Chinese civilians fled Nantao into nearby foreign-controlled areas, especially the French Concession since it was directly connected to Nantao <Citation entries={['fraserStatusInternationalSettlement1939', 'BOMBEDNANTAOSCENE1937']} />.
+              <figure>
+                <img
+                  className="halfwidth"
+                  src={fleeNantao}
+                  alt="Les Japonais arrivent -- Les habitants fuient Nantao 9.11.1937"
+                />
+                <figcaption>
+                  Refugees fleeing Nantao in September <Citation entries={['JaponaisArriventHabitants']} />.
+                </figcaption>
+              </figure>
+            </p>
+            <p>
+              Originally, the police of the French Concession tried to push these Chinese peasants out, because the French Concession was already full of Chinese refugees (more than 20,000) from previous conflicts <Citation entries={['fraserStatusInternationalSettlement1939']} />. Refugees were blocked at the iron gate of Porte du Nord (北門), which was the primary entrance to the French Concession from Nantao.
+              <figure>
+                <img
+                  className="halfwidth"
+                  src={refugeeAtGate}
+                  alt="Refugees massed behind at the Porte du Nord iron gate (French Concession)"
+                />
+                <figcaption>
+                  Refugees massed behind at the Porte du Nord iron gate (French Concession) <Citation entries={['virtualcitiesprojectinstitutdasieorientaleRefugeesMassedPorte1937']} />.
+                </figcaption>
+              </figure>
+            </p>
+          </section>
         </section>
 
         <Bibliography />

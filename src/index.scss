@@ -126,6 +126,12 @@ body {
     }
   }
 
+  .halfwidth{
+    width: 100%;
+    max-width: initial;
+    max-height: initial;
+  }
+
   .fullwidth {
     position: relative !important;
     left: 50% !important;
@@ -134,8 +140,8 @@ body {
     margin-right: -50vw !important;
     width: 100vw !important;
     height: auto !important;
-    max-width: max-content !important;
-    max-height: max-content !important;
+    max-width: initial;
+    max-height: initial;
   }
 
   #app {
