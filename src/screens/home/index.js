@@ -17,6 +17,8 @@ import japanesePromise from '../../assets/images/abendJapanesePromiseNot1937.png
 import newNantaoBombing from '../../assets/images/timesNEWNANTAOBOMBING1937.png';
 import fleeNantao from '../../assets/images/Fleeing from Nanshi.jpeg';
 import refugeeAtGate from '../../assets/images/127E2.jpg';
+import communityKitchen from '../../assets/images/12_community_courtyard_kitchen.png';
+import heim from '../../assets/images/screen_shot_2021-07-20_at_10341_pm.png';
 import { Bibliography, Citation, Ornament } from '../../components';
 import './style.scss';
 
@@ -372,8 +374,50 @@ const Home = () => {
                   Refugees massed behind at the Porte du Nord iron gate (French Concession) <Citation entries={['virtualcitiesprojectinstitutdasieorientaleRefugeesMassedPorte1937']} />.
                 </figcaption>
               </figure>
+              Eventually, the gates were opened and refugees flocked into the French Concession <Citation entries={['BOMBEDNANTAOSCENE1937']} />.
             </p>
           </section>
+
+          <section>
+            <h3 className="subsection">Wartime Haven</h3>
+            <p>
+              The foreign concession in Shanghai continued to be a haven for refugees. Before the attack on Pearl Harbour, people at the time believed that Japan would not dare to take over the foreign concessions with force, that going into war with the other “Concession Powers” would be too much of a risk for Japan <Citation entries={['fraserStatusInternationalSettlement1939']} />. However, even after Pearl Harbour, when the Japanese eventually took over the concessions, many refugees were forced to live in a compacted area called Shanghai Ghetto (officially, 無國籍難民限定地區 “Restricted Sector for Stateless Refugees”), living in harsh conditions but unharmed <Citation entries={['tokayerFuguPlanUntold2012']} />.
+            </p>
+            <p>
+              Notably, a great number of the refugees were Jews this time, who had fled Europe into the International Settlement before 1941, when the Japanese had taken over the rest of Shanghai but allowed visa-less foreigners to enter the concessions freely.
+              Nazi Germany once asked Japan to exterminate the Jewish population in the concessions, but the Japanese did not do so eventually, and because it did not want to provoke the Allies and the international Jewish community unnecessarily <Citation entries={['kearneyJewsJapaneseDomination1993', 'tokayerFuguPlanUntold2012']} />.
+            </p>
+            <p>
+              Effectively, around 18,000 Jewish refugees lived in Shanghai Ghetto and most survived the war <Citation entries={['tokayerFuguPlanUntold2012']} />. A great number of them chose to stay in Shanghai even after the war, and most eventually left after the Communist takeover of Shanghai in 1949.
+              <figure>
+                <img
+                  className="halfwidth"
+                  src={communityKitchen}
+                  alt="Community Courtyard Kitchen and Laundry, Hongkew, Shanghai, April 1946"
+                />
+                <figcaption>
+                  Community Courtyard Kitchen and Laundry, Hongkew, Shanghai, April 1946 <Citation entries={['rothsteinCommunityCourtyardKitchen1946']} />.
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  className="halfwidth"
+                  src={heim}
+                  alt="Jewish communities in Shanghai established heime—German for 'homes'—or communal living shelters for the thousands of refugees that arrived from Europe during World War II, April 1946"
+                />
+                <figcaption>
+                  Jewish communities in Shanghai established <i>heime</i> (home) or communal living shelters for the thousands of refugees that arrived from Europe during World War II. April 1946 <Citation entries={['rothsteinCommunityCourtyardKitchen1946']} />.
+                </figcaption>
+              </figure>
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <h2 className="section">Personal comments</h2>
+          <p>
+            The motif of aggression is the linking strand of materials presented in this project. We have seen the ambitious British, opening treaty ports in China by violent means of war, chauvinistically imposing their interest in free trade and commerce. The other powers, France and the US, soon followed the example of Britain.
+          </p>
         </section>
 
         <Bibliography />
