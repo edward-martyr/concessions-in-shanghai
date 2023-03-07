@@ -414,9 +414,18 @@ const Home = () => {
         </section>
 
         <section>
-          <h2 className="section">Personal comments</h2>
+          <h2 className="section">Conclusions and personal comments</h2>
           <p>
-            The motif of aggression is the linking strand of materials presented in this project. We have seen the ambitious British, opening treaty ports in China by violent means of war, chauvinistically imposing their interest in free trade and commerce. The other powers, France and the US, soon followed the example of Britain.
+            The motif of <em>power</em> in relation to aggression and protection is the linking strand of materials presented in this project. We have seen the ambitious British, opening treaty ports in China by violent means of war, chauvinistically imposing their interest in free trade and commerce. The other powers, France and the US, soon followed the example of Britain. Nevertheless, during rebellions like Taiping Rebellion, the concessions humanitarianly allowed Chinese to seek refuge there.
+          </p>
+          <p>
+            After decades of unrestricted, unregulated expansion, the Concession Powers softened their assertion over the concession, with the US claiming that they hold no concession in Shanghai <Citation entries={['hudsonInternationalProblemsShanghai1927']} />, and the Municipal Council considering to return parts of the expansion to Chinese rule.
+          </p>
+          <p>
+            During the merciless bombing of Nantao, the French Concession again opened its gates to Chinese refugees, and the Japanese, whether due to fear of Western powers or not, did not attack the concessions. When the Japanese eventually took over the entirety of Shanghai, it also allowed refugees to survive in the International Settlement, despite being asked by Nazi Germany to exterminate the Jewish population there. While the Japanese brutally massacred civilians in other cities during the war, the concessions Shanghai were able to largely maintain warless and peaceful, precicely because of the special political status of concessions due to the deterrence of the other Concession Powers.
+          </p>
+          <p>
+            This power play about concessions is still found in present-day Shanghai, where I grew up. For example, many high-end restaurants, cafés, residential areas, etc. are located in the old French Concession area, and they proudly advertise themselves as being in the French Concession, inheriting its supposed cultural superiority, styling themselves using old place names to look refined. Because the Concession Powers were seen as bringing modernity and progress to China, these advertisements try to bring back the power dynamics of the past to show their own superiority.
           </p>
         </section>
 
