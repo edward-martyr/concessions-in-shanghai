@@ -3,7 +3,12 @@ import Hyphenated from 'react-hyphen';
 
 import emblemOfShanghai from '../../assets/images/Old_emblem_of_Shanghai.svg';
 import bund1849 from '../../assets/images/Bund1850 painting.jpg';
-import { Bibliography, Citation } from '../../components';
+import bund1854 from '../../assets/images/Bund1854painting.jpg';
+import bund1857 from '../../assets/images/bund1857painting.jpg';
+import bund1862 from '../../assets/images/bund1862painting.jpg';
+import bund1867 from '../../assets/images/bund1867painting.jpg';
+import bund1879 from '../../assets/images/bund1879painting.jpg';
+import { Bibliography, Citation, Ornament } from '../../components';
 import './style.scss';
 
 const Home = () => {
@@ -13,7 +18,7 @@ const Home = () => {
         <section>
           <h2 className="section">Western Imperialist Interest in Shanghai</h2>
           <p>
-            In the popular reference book series <cite>Twentieth Century Impressions</cite> <Citation entries={['wrightTwentiethCenturyImpressions']} /> published in Britain and edited by Arnold Wright, who was an enthusiast for colonial imperialism <Citation entries={['wrightRomanceColonisationBeing1923']} />, Shanghai is depicted as a major cotton, silk and fertiliser export port in the 18th and early 19th centuries. It was fashioned as “an important centre of trade”, even “before [it] attracted European notice”.
+            In the popular reference book series <cite>Twentieth Century Impressions</cite> <Citation entries={['wrightTwentiethCenturyImpressions']} /> published in Britain and edited by Arnold Wright, who was an enthusiast for colonial imperialism <Citation entries={['wrightRomanceColonisationBeing1923']} />, Shanghai is depicted as a major cotton, silk and fertiliser export port in the 18th and early 19th centuries. It is fashioned as “an important centre of trade”, even “before [it] attracted European notice”.
           </p>
           <p>
             As Wright narrates, as early as in 1756, Shanghai began to attract British interest, with Frederick Pigou, a member of the East India Company, noting it down in his memo. However, the Company’s attempts to make Shanghai a central trading port for tea, silk, and opium were unsuccessful, rebuked by the local officials. It was not until during the First Opium War, when the British navy sailed into the waters of Shanghai, that the naval officers were struck by the position of Shanghai in terms of trade, and therefore Shanghai was included as one of the treaty ports in the Treaty of Nanking (南京條約) in 1842.
@@ -30,6 +35,8 @@ const Home = () => {
           <p>
             In the following timeline, I will refer to primary sources as well as early 20th-century secondary sources to trace the history of Shanghai regarding the establishment and development of concessions; while some sources (such as Wright) are fairly opinionated, some are less so and are peer-reviewed journal articles, allowing me to present an original and comprehensive perspective on concessions in Shanghai.
           </p>
+
+          <Ornament />
           <div className="timeline">
             <div>
               <section className="year">
@@ -161,7 +168,7 @@ const Home = () => {
                 </section>
                 <section>
                   <ul>
-                    <h4>Growing Prosperity of the Bund</h4>
+                    <h4>Growing prosperity of the Bund</h4>
                     <li>
                       As the following painting depicts, the Bund was already scattered with a few Western buildings at the time, and Western water sports such as regatta was played on Whangpoo River.
                       Notably, most of the buildings were foreign companies, including Gibb, Livingstone & Co., Augustine Heard & Co., Jardine, Matheson & Co., Orient (P & O) Company, and so on.
@@ -187,7 +194,7 @@ const Home = () => {
                 <h3 className="year">1853</h3>
                 <section>
                   <ul>
-                    <h4>Abandonment of Exclusion Policies</h4>
+                    <h4>Abandonment of exclusion policies</h4>
                     <li>
                       Originally, the concessions were exclusive to the respective nationals, and in particular, the Chinese were not allowed to enter any of the concessions. However, the regulations gradually loosened, when disturbances arose in the Chinese town, and people would flock into the concessions for refuge.
                     </li>
@@ -198,21 +205,51 @@ const Home = () => {
                 </section>
               </section>
               <section className="year">
+                <h3 className="year">1854</h3>
+                <section>
+                  <ul>
+                    <h4>Cooperation between concessions</h4>
+                    <li>
+                      In 1854, all three consuls (British, American, and French) promulgated the new Land Regulations, and formed a joint body, called Shanghai Municipal Council, to regulate the concessions <Citation entries={['hudsonInternationalProblemsShanghai1927']} />.
+                    </li>
+                  </ul>
+                </section>
+              </section>
+              <section className="year">
                 <h3 className="year">1863</h3>
                 <section>
                   <ul>
                     <h4>Establishment of the International Settlement</h4>
                     <li>
-                      After just about over a decade of existence, the American and British Settlements were amalgamated into a single foreign concession, later called the International Settlement by agreement <Citation entries={['fraserStatusInternationalSettlement1939']} />.
+                      After just about over a decade of existence, the American and British Settlements were amalgamated into a single foreign concession, later called the International Settlement by agreement in October, 1863 <Citation entries={['hudsonInternationalProblemsShanghai1927', 'fraserStatusInternationalSettlement1939']} />.
                     </li>
                     <li>
-                      The French Concession did not take part in the amalgamation, and remained as a separate concession.
+                      Although the French consuls had consented to join the British and Americans, the French Concession eventually did not take part in the amalgamation, and remained as a separate concession, possibly due to the French government’s unwillingness to manage the concession with the British and Americans <Citation entries={['hanFrenchColonialPolicy1932', 'hudsonInternationalProblemsShanghai1927']} />.
                     </li>
                   </ul>
                 </section>
               </section>
             </div>
           </div>
+          <Ornament />
+
+          <p>
+            Until this point, the basic layout of concessions in Shanghai has been established, with the concessions taking up most of the urban space in Shanghai, and the Chinese city, also called Nantao (南島, lit. ‘South Island’), being surrounded by the French Concession like a tiny stranded peninsula. North of the French Concession, across Yang-King-Pang, was the International Settlement (officially called the “Foreign Settlement at Shanghai North of the Yang-King-Pang”), combined from the British and the American Settlements.
+          </p>
+          <p>
+            Nevertheless, based on this basic layout, the concessions were still fast developing and expanding.
+          </p>
+          <p>
+            As mentioned above, below is a series of paintings done by the same artist <Citation entries={['virtualcitiesprojectinstitutdasieorientaleGeneralViewBund']} />, depicting the Bund from 1849 to 1879. The paintings depict and thus document the rigorous growth of the Bund, the central area of the concessions. Each year, we gradually see more foreign buildings and boats in greater size and number; the painter had to zoom out, almost using panorama, to fit the growing content of the paintings.
+          </p>
+          {
+            [bund1849, bund1854, bund1857, bund1862, bund1867, bund1879].map((img) => (
+              <figure key={img}>
+                <img className="fullwidth" src={img} alt={img} />
+              </figure>
+            ))
+          }
+          <Ornament />
 
           <figure>
             <img
