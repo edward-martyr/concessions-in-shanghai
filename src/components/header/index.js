@@ -30,7 +30,7 @@ export default () => {
               Concessions in Shanghai
             </h1>
             <h2>
-              Power, Aggression, Refuge
+              Power in Aggression & Protection
             </h2>
           </div>
         </Parallax>
