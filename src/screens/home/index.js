@@ -328,7 +328,7 @@ const Home = () => {
           <section>
             <h3 className="subsection">Battle of Shanghai (淞滬會戰/第二次上海事變)</h3>
             <p>
-              After the Marco Polo Bridge Incident (卢沟桥事变) in July, 1937 near Peking, Japanese invasion of Northern China began.
+              After the Marco Polo Bridge Incident (蘆溝橋事變) in July, 1937 near Peking, Japanese invasion of Northern China began.
               As the beginning of its invasion of Southern China, i.e., marking a full-scale invasion of all of China,
               in August, 1937, the Japanese army launched a full-scale attack on Shanghai, with the aim of capturing the city.
             </p>
