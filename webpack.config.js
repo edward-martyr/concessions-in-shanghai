@@ -1,4 +1,5 @@
 const path = require('path');
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
@@ -50,6 +51,9 @@ module.exports = {
       inject: true,
       favicon: './src/海.png',
       template: './src/index.html',
+    }),
+    new CnameWebpackPlugin({
+      domain: 'concessions-in-shanghai.nyoeghau.com',
     }),
     new CopyPlugin({
       patterns: [
